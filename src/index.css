@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Playfair+Display&family=Rubik+Dirt&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(36, 62, 66, 0.815));
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1{
+  font-size: 50px;
+  color: rgba(137, 43, 226, 0.877);
+  font-family: 'Alumni Sans Inline One', cursive;
+}
+nav h1 span{
+  color: rgb(82, 160, 71);
+}
+nav input{
+  width: 500px;
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+.rightCornerNav a{
+  font-size: 30px ;
+  text-decoration: none;
+  background-color: olivedrab;
+  color: wheat;
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: 'Alumni Sans Inline One', cursive;
+}
+nav button{
+  font-size: 30px ;
+  text-decoration: none;
+  background-color: olivedrab;
+  color: wheat;
+  margin-right: 250px;
+  margin-left : 5px;
+  padding: 8px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: 'Alumni Sans Inline One', cursive;
+  border: none;
+}
+.anime-list{
+  display: grid;
+  grid-template-columns: repeat(2,700px);
+  justify-content: flex-start;
+  width: 100%;
+  background: linear-gradient(to right,rgba(14, 13, 13, 0.911), rgba(32, 53, 56, 0.815));
+  padding-left: 200px;
+}
+.anime-list>h1{
+  color:  rgb(149, 206, 43);
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+.anime{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  padding: 0 50px;
+  margin-right: 200px;
+  background: linear-gradient(to right, rgba(137, 43, 226, 0.801),blueViolet);
+  border-bottom: double 15px rgb(22, 2, 2);
+  box-shadow: 3px 3px 3px #345563;
+}
+/* .anime:hover{
+  transform: scale(1.05);
+  border: none;
+} */
+#anime{
+  margin: 0 20px;
+  width: 100%;
+}
+#anime h1{
+  color: rgb(46, 42, 36);
+  font-size: 30px;
+}
+#anime h1 span{
+  color: rgb(230, 219, 228);
+}
+#anime img{
+  width: 400px;
+  height: 350px;
+}
+.anime button{  
+  background-color: rgba(235, 229, 229, 0);
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 60px;
+  margin: 250px 20px;
+  text-align: center;
+  padding-top: 7px ;
+  font-size: 50px;
+  color: rgb(211, 23, 54);
+}
+.anime button:active{
+  transform: scale(1.3);
+}
+.loader{  
+  height: 300px;
+  border-radius: 50%;
+  border-top: 3px solid rgb(50, 112, 206) ;
+  border-right: 3px solid rgb(54, 79, 224) ;
+  /* border-bottom: 3px solid rgb(54, 79, 224) ;
+  border-left: 3px solid rgb(54, 79, 224) ; */
+  width: 300px;
+  /* height: 2px;
+  background-color: #456774; */
+  animation-name: loader;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: auto;
+}
+@keyframes loader 
+{
+  0%{
+      /* height: 1px;
+      width: 0px; */
+      transform: rotate(0deg);
+      
+  }
+  100%{
+      /* height: 3px;
+      width: 800px; */
+      transform: rotate(360deg);
+  }
+}
